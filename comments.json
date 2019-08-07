@@ -1,0 +1,137 @@
+{
+    "Transparency" : {
+      "name" : "Transparency",
+      "development" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level 3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level  5"
+        },
+    "operations" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level  3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level  5"
+        }
+      },
+    "Inclusivity" : {
+      "name" : "Inclusivity",
+      "development" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level  1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level  3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level  5"
+        },
+    "operations" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level  1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level  3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level  5"
+        }
+      },
+    "Adaptability" : {
+      "name" : "Adaptability",
+      "development" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level  1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level  3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level  5"
+        },
+    "operations" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level 2",
+        "3" : "XXX",
+        "3-action" : "Action for Level 3",
+        "4" : "XXX",
+        "4-action" : "Action for Level 4",
+        "5" : "XXX",
+        "5-action" : "Action for Level 5"
+        }
+      },
+    "Collaboration" : {
+      "name" : "Collaboration",
+      "development" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level 2",
+        "3" : "XXX",
+        "3-action" : "Action for Level 3",
+        "4" : "XXX",
+        "4-action" : "Action for Level 4",
+        "5" : "XXX",
+        "5-action" : "Action for Level 4"
+        },
+    "operations" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level  2",
+        "3" : "XXX",
+        "3-action" : "Action for Level 3",
+        "4" : "XXX",
+        "4-action" : "Action for Level 4",
+        "5" : "XXX",
+        "5-action" : "Action for Level 5"
+        }
+      },
+    "Community" : {
+      "name" : "Community",
+      "development" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level 2",
+        "3" : "XXX",
+        "3-action" : "Action for Level  3",
+        "4" : "XXX",
+        "4-action" : "Action for Level  4",
+        "5" : "XXX",
+        "5-action" : "Action for Level 5"
+        },
+    "operations" : {
+        "1" : "XXX",
+        "1-action" : "Action for Level 1",
+        "2" : " ",
+        "2-action" : "Action for Level 2",
+        "3" : "XXX",
+        "3-action" : "Action for Level 3",
+        "4" : "XXX",
+        "4-action" : "Action for Level 4",
+        "5" : "XXX",
+        "5-action" : "Action for Level 5"
+        }
+      }
+}
