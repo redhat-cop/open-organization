@@ -81,23 +81,33 @@ $("#input").slider({
 <form id="regForm" action="tmp.php">
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
-  <h3>Welcome to the Open Organization Capability Model</h3>
+<h3>Welcome to the Open Organization Capability Model</h3>
 
 <p class="mainText">
-The Open Organization Capability Model is a framework for helping your organization to become more transparent, inclusive, adaptable, collaborative, and communal. It outlines steps that individuals, teams, and organizations can take to critically examine their organizational practices and chart their progress toward becoming a more open organization (as outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank>Open Organization Definition</a>)
-<ul>
-    <li class="mainText">Understand the capabilities within your organization across five outlined areas of interest:
-    <ul>
-        <li class="mainText">Transparency
-        <li class="mainText">Inclusivity
-        <li class="mainText">Adaptability
-        <li class="mainText">Collaboration
-        <li class="mainText">Community
-        </ul>
-    </ul>
-<br>
-    <p class="mainText">All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly—and to help them explore possibilities for becoming more so.</p>
+The Open Organization Capability Model is a tool for assessing your organization's current culture.
+</p>
 
+<p class="mainText">
+In particular, the tool measures your organization's relative degree of openness, with particular attention to five open principles outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
+</p>
+
+<ul>
+        <li class="mainText">Transparency</li>
+        <li class="mainText">Inclusivity</li>
+        <li class="mainText">Adaptability</li>
+        <li class="mainText">Collaboration</li>
+        <li class="mainText">Community</li>
+</ul>
+
+<p class="mainText">
+As part of the assessment process, you'll learn how individuals, teams, and organizations can critically examine their organizational practices and chart their progress toward becoming a more open organization.
+</p>
+<p class="mainText">
+This tool is based on the Open Organization Maturity Model, which the open organization community maintains. For more information about that model, please visit <a target=_ href="http://www.opensource.com/open-organization/resources/open-org-maturity-model"><b>Opensource.com</b></a>.
+</p>
+
+<p class="mainText">Before beginning this assessment, remember: All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly and to help them explore possibilities for becoming more so.
+</p>
 
   </div>
   <div class="tab"><h4>Customer Details</h4>
