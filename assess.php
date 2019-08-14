@@ -84,11 +84,11 @@ $("#input").slider({
 <h3>Welcome to the Open Organization Capability Model</h3>
 
 <p class="mainText">
-The Open Organization Capability Model is a tool for assessing your organization's current culture.
+The Open Organization Capability Model is a tool for assessing your organization's culture.
 </p>
 
 <p class="mainText">
-In particular, the tool measures your organization's relative degree of openness, with particular attention to five open principles outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
+More specifically, the tool measures your organization's relative degree of openness, with particular attention to five open principles outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
 </p>
 
 <ul>
