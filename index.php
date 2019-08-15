@@ -102,6 +102,9 @@ This tool is based on the Open Organization Maturity Model, which the open organ
 <p class="mainText">Before beginning this assessment, remember: All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly and to help them explore possibilities for becoming more so.
 </p>
 
+<p>
+<b>Note:</b> This Open Organisation Capability Model is to be used as a tool to be used with guided conversation to provide input from each person’s perspective with the results to be used as a basis for discussion and alignment.  This tool is no way an actual assessment of a whole organisations capability.
+</p>
 </div>
 
 <center><a href="login.php"><button type="button">Login</button></a></center>
