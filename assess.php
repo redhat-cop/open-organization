@@ -102,11 +102,16 @@ More specifically, the tool measures your organization's relative degree of open
 <p class="mainText">
 As part of the assessment process, you'll learn how individuals, teams, and organizations can critically examine their organizational practices and chart their progress toward becoming a more open organization.
 </p>
+
 <p class="mainText">
-This tool is based on the Open Organization Maturity Model, which the open organization community maintains. For more information about that model, please visit <a target=_ href="http://www.opensource.com/open-organization/resources/open-org-maturity-model"><b>Opensource.com</b></a>.
+This tool is based on the <a href="http://www.opensource.com/open-organization/resources/open-org-maturity-model" target=_blank><b>Open Organization Maturity Model</b></a>, which the open organization community at Opensource.com maintains.
 </p>
 
 <p class="mainText">Before beginning this assessment, remember: All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly and to help them explore possibilities for becoming more so.
+</p>
+
+<p class="mainText">
+<b>Important note:</b> This tool is intended for use in conjunction with guided conversation in a workshop setting. Results should be used only as a basis for discussion in a learning context. This tool is no way a complete or comprehensive assessment of an entire organization's capabilities.
 </p>
 
   </div>
