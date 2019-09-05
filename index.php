@@ -1,5 +1,16 @@
 <?php
 session_start();
+    if(isset($_REQUEST['lang'])) {
+        $_SESSION['lang'] = $_REQUEST['lang'];
+    }
+    $language = (isset($_SESSION['lang']) ? $_SESSION['lang'] : "en");
+
+if (($language != "ru") && ($language != "en")) {
+	$language = "en";
+	$_SESSION['lang'] = "en";
+}
+
+include 'print-index.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +25,8 @@ session_start();
 <link rel="stylesheet" href="css/style.css" />
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+   
   <script>
   $( function() {
     $( "#tabs" ).tabs();
@@ -43,6 +55,8 @@ session_start();
 			</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
+			<li><a href=index.php?lang=en>English</a></li>
+			<li><a href=index.php?lang=ru>Pусский</a></li>
 				<?php if (isset($_SESSION['usr_id'])) { ?>
 				<li><a href="assess.php">Run Assessment</a></li>
 				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
@@ -72,41 +86,20 @@ $userId = $_SESSION['usr_id'];
 <?php    }
 ####  End of Logged on bit ######
 ?>
-<div class="container">
 
-<h3>Welcome to the Open Organization Capability Model</h3>
+<?php
+switch ($language) {
+	case "en":
+		printenindex();
+		break;
+	case "ru":
+		printruindex();
+		break;
+   default:
+		printenindex();
 
-<p class="mainText">
-The Open Organization Capability Model is a tool for assessing your organization's culture.
-</p>
-
-<p class="mainText">
-More specifically, the tool measures your organization's relative degree of openness, with particular attention to five open principles outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
-</p>
-
-<ul>
-        <li class="mainText">Transparency</li>
-        <li class="mainText">Inclusivity</li>
-        <li class="mainText">Adaptability</li>
-        <li class="mainText">Collaboration</li>
-        <li class="mainText">Community</li>
-</ul>
-
-<p class="mainText">
-As part of the assessment process, you'll learn how individuals, teams, and organizations can critically examine their organizational practices and chart their progress toward becoming a more open organization.
-</p>
-
-<p class="mainText">
-This tool is based on the <a href="http://www.opensource.com/open-organization/resources/open-org-maturity-model" target=_blank><b>Open Organization Maturity Model</b></a>, which the open organization community at Opensource.com maintains.
-</p>
-
-<p class="mainText">Before beginning this assessment, remember: All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly and to help them explore possibilities for becoming more so.
-</p>
-
-<p class="mainText">
-<b>Important note:</b> This tool is intended for use in conjunction with guided conversation in a workshop setting. Results should be used only as a basis for discussion in a learning context. This tool is no way a complete or comprehensive assessment of an entire organization's capabilities.
-</p>
-</div>
+}
+?>
 
 <center><a href="login.php"><button type="button">Login</button></a></center>
 <br />

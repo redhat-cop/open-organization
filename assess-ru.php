@@ -20,6 +20,9 @@ include('functionPutFieldsets.php');
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="content-language" content="ru">
+
 <link rel="stylesheet" type="text/css" href="https://overpass-30e2.kxcdn.com/overpass.css"/>
 <link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet" href="css/jquery.qtip.css" />
@@ -27,7 +30,7 @@ include('functionPutFieldsets.php');
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
 
 <script src="js/jquery-1.12.4.js"></script>
 <script src="js/jquery-ui.js"></script>
@@ -35,7 +38,7 @@ include('functionPutFieldsets.php');
 <script>$.fn.slider = null</script>  
 <script src="js/bootstrap-slider.js"></script>  
 <script src="js/bootstrap-toggle.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
 
 
 <script type="text/javascript" >
@@ -80,10 +83,10 @@ $("#input").slider({
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
 			<li><a href=assess.php?lang=en>English</a></li>
-			<li><a href=assess-ru.php?lang=ru>Pусский</a></li>
-				<li><p class="navbar-text">Signed in as <?php echo $_SESSION['usr_name']; ?></p></li>
-				<li><a href="passwd.php">Change Password</a></li>
-				<li><a href="logout.php">Log Out</a></li>
+			<li><a href=assess.php?lang=ru>Pусский</a></li>
+				<li><p class="navbar-text">Подписано как <?php echo $_SESSION['usr_name']; ?></p></li>
+				<li><a href="passwd.php">Изменить пароль</a></li>
+				<li><a href="logout.php">Выйти</a></li>
 			</ul>
 		</div>
 	</div>
@@ -94,59 +97,59 @@ $("#input").slider({
 <form id="regForm" action="tmp.php">
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
-<h3>Welcome to the Open Organization Capability Model</h3>
+<h3 class="russian">Добро пожаловать в открытую модель возможностей организации</h3>
 
-<p class="mainText">
-The Open Organization Capability Model is a tool for assessing your organization's culture.
+<p class="russian2">
+Модель возможностей открытой организации - это инструмент для оценки культуры вашей организации.
 </p>
 
-<p class="mainText">
-More specifically, the tool measures your organization's relative degree of openness, with particular attention to five open principles outlined in the <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
+<p class="russian2">
+Более конкретно, инструмент измеряет относительную степень открытости вашей организации, уделяя особое внимание пяти открытым принципам, изложенным в <a href="https://github.com/open-organization-ambassadors/open-org-definition/blob/master/open_org_definition.md" target=_blank><b>Open Organization Definition</b></a>:
 </p>
 
 <ul>
-        <li class="mainText">Transparency</li>
-        <li class="mainText">Inclusivity</li>
-        <li class="mainText">Adaptability</li>
-        <li class="mainText">Collaboration</li>
-        <li class="mainText">Community</li>
+<li class="mainText">Прозрачность</li>
+<li class="mainText">Инклюзивность</li>
+<li class="mainText">Адаптируемость</li>
+<li class="mainText">Сотрудничество</li>
+<li class="mainText">Сообщество</li>
 </ul>
 
-<p class="mainText">
-As part of the assessment process, you'll learn how individuals, teams, and organizations can critically examine their organizational practices and chart their progress toward becoming a more open organization.
+<p class = "russian2">
+В рамках процесса оценки вы узнаете, как отдельные лица, команды и организации могут критически проанализировать свои организационные методы и наметить свой прогресс в становлении более открытой организацией.
 </p>
 
-<p class="mainText">
-This tool is based on the <a href="http://www.opensource.com/open-organization/resources/open-org-maturity-model" target=_blank><b>Open Organization Maturity Model</b></a>, which the open organization community at Opensource.com maintains.
+<p class = "russian2">
+Этот инструмент основан на <a href="http://www.opensource.com/open-organization/resources/open-org-maturity-model" target=_blank> <b> Open Organization Maturity Model </b> </a>, которое поддерживает сообщество открытых организаций на Opensource.com.
 </p>
 
-<p class="mainText">Before beginning this assessment, remember: All organizations are different, so they adopt open principles and practices to different degrees. This model's three-level design therefore aims both to assist organizations determining the relative degree to which they act openly and to help them explore possibilities for becoming more so.
+<p class = "russian2"> Прежде чем начинать эту оценку, помните: все организации разные, поэтому они в разной степени применяют открытые принципы и практики. Таким образом, трехуровневый дизайн этой модели направлен как на то, чтобы помочь организациям определить относительную степень, в которой они действуют открыто, так и на то, чтобы помочь им изучить возможности для достижения большего.
 </p>
 
-<p class="mainText">
-<b>Important note:</b> This tool is intended for use in conjunction with guided conversation in a workshop setting. Results should be used only as a basis for discussion in a learning context. This tool is no way a complete or comprehensive assessment of an entire organization's capabilities.
+<p class = "russian2">
+<b> Важное примечание. </b> Этот инструмент предназначен для использования в сочетании с управляемой беседой в мастерской. Результаты должны использоваться только в качестве основы для обсуждения в контексте обучения. Этот инструмент никоим образом не является полной или всесторонней оценкой возможностей всей организации.
 </p>
 
   </div>
-  <div class="tab"><h4>Customer Details</h4>
-    <p><input placeholder="Client Name" oninput="this.className = ''" name="customerName" ></p>
-    <p><input placeholder="Email Address" oninput="this.className = ''" name="rhEmail"  ></p>
-    <p><input placeholder="Project/Team" oninput="this.className = ''" name="project"  ></p>
+  <div class="tab"><h4 class="russian2">Данные клиента</h4>
+    <p><input placeholder="имя клиента" oninput="this.className = ''" name="customerName" ></p>
+    <p><input placeholder="Адрес электронной почты" oninput="this.className = ''" name="rhEmail"  ></p>
+    <p><input placeholder="Название команды" oninput="this.className = ''" name="project"  ></p>
 <!-- <label class="checkbox-inline">
   <input type="checkbox" class="shareBox" name="share" id="share" checked> Do you agree that the anonymous results can be used for comparative purposes?
 
  </label>
- --><p>Do you agree that the anonymous results can be used for comparative purposes?</p>
+ --><p class="russian">Согласны ли вы с тем, что анонимные результаты могут использоваться для сравнительных целей?</p>
 
-<input type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" name="share" id="share" data-size="normal" data-onstyle="success"  data-offstyle="danger" checked>
-    <p class="mainTextItalic">Note: comparisons are only available if you opt-in to share data</p>
+<input type="checkbox" data-toggle="toggle" data-on="да" data-off="нет" name="share" id="share" data-size="normal" data-onstyle="success"  data-offstyle="danger" checked></input>
+    <p class="mainTextItalic"> Примечание. Сравнения доступны только в том случае, если вы разрешите обмениваться данными.</p>
 
 
- <p>Do you agree that Red Hat may follow up with you via email after this assessment?</p>
+ <p class="russian">Согласны ли вы с тем, что Red Hat может связаться с вами по электронной почте после этой оценки?</p>
 
-<input type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" name="contact" id="contact" data-size="normal" data-onstyle="success"  data-offstyle="danger" checked>
+<input type="checkbox" data-toggle="toggle" data-on="да" data-off="нет" name="contact" id="contact" data-size="normal" data-onstyle="success"  data-offstyle="danger" checked>
 <br><br>
-<p>Please select Country and Line of Business using the drop down lists</p>
+<p class="russian">Пожалуйста, выберите страну и направление деятельности, используя выпадающие списки</p>
 <?php putCountries();?>
 
 <?php putLoBs();?>
@@ -156,13 +159,13 @@ This tool is based on the <a href="http://www.opensource.com/open-organization/r
 <?php
 
 function printQuestions($title,$area) {
-$string = file_get_contents("questionsV2.json");
-$json = json_decode( preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $string), true );
+$string = file_get_contents("questionsV2-ru.json");
+$json = json_decode($string, true );
 
 $i=1;
 $qnum = $json[$area]['qnum'];
 
-print '   <h2>' . $title . '</h2><b>' . $json[$area]['overview'] . '</b>
+print '   <h2  class="russian">' . $title . '</h2><p class="russian2">' . $json[$area]['overview'] . '</p>
 <br><br>
 <div class="divTable">
 <div class="divTableBody">
@@ -174,11 +177,8 @@ while( $i < 4) {
 	} else {
 	print '<div class="divTableCell">';	
 	}
-#	print '<div class="divTableCell">';
-#	$sum = $i . '-summary';
-#	print '<p><b>Summary:</b>' . $json[$area][$sum] . '</p>';
-   print '<b>Level ' . $i . '</b>'; 
-	print '<p>' . $json[$area][$i] . "</p>";
+   print '<b>Уровень ' . $i . '</b>'; 
+	print '<p class="russian2">' . $json[$area][$i] . "</p>";
 #	if ($json[$type][$area][$i]['description'] != "XXX") {
 #		print '<a href="#" title="' . $json[$type][$area][$i]['description'] . '">More Detail</a>';
 #	}
@@ -188,49 +188,49 @@ $i++;
 print '</div>
 </div>';
 print '</div>';
-print "<hr><h4 class='headerCentered'>Now</h4>";
+print "<hr><h4 class='headerCentered'>Сейчас</h4>";
 print '<input data-slider-id="sliderCol" class="slider" type="range" data-slider-value="1"  name="d' . $qnum . '" type="text" data-slider-rangeHighlights=[{ "start": 0, "end": 1, "class": "category1" }, { "start": 1, "end": 2, "class": "category2" }, { "start": 2, "end": 3, "class": "category3" }] />';
 print "
-<h4 class='headerCentered'>Vision</h4>";
+<h4 class='headerCentered'>Будущее</h4>";
 print '<input data-slider-id="sliderCol" class="slider" type="range" data-slider-value="1"  name="o' . $qnum . '" type="text" data-slider-rangeHighlights=[{ "start": 0, "end": 2, "class": "category1" }, { "start": 1, "end": 2, "class": "category2" }, { "start": 2, "end": 3, "class": "category3" }] />';
 print "<br>";
-print "<h4>Notes</h4>";
+print "<h4 class=\"russian\">Комментарии</h4>";
 print '<textarea form=regForm name="comments_' . $area . '" id="comments_' . $area . ' wrap="soft" rows="2"></textarea>';
 };
 
 ?>  
   
   <div class="tab">
-<?php printQuestions("Transparency","transparency");  ?>
+<?php printQuestions("Транспарентность","transparency");  ?>
   </div>
 
   <div class="tab">
-<?php printQuestions("Inclusivity","inclusivity");  ?>
+<?php printQuestions("Вовлечённость","inclusivity");  ?>
   </div>
 
   <div class="tab">
-<?php printQuestions("Adaptability","adaptability");  ?>
+<?php printQuestions("Приспособляемость","adaptability");  ?>
   </div>
 
   <div class="tab">
-<?php printQuestions("Collaboration","collaboration");  ?>
+<?php printQuestions("Сотрудничество","collaboration");  ?>
   </div>
 
   <div class="tab">
-<?php printQuestions("Community","community");  ?>
+<?php printQuestions("Сообщество","community");  ?>
   </div>
 
   <div class="tab">
-<h2>Discussion Points</h2>
-  <h4> Please add any discussion points or other information here</h4>
+<h2 class="russianBig">Вопросы для обсуждения</h2>
+  <h4  class="russian">Пожалуйста, добавьте любые вопросы для обсуждения или другую информацию здесь</h4>
 <br>
 <textarea form=regForm name="comments" id="comments" wrap="soft" rows="20"></textarea>
   </div>
 
   <div style="overflow:auto;">
     <div style="float:right;">
-      <button type="button" id="prevBtnCJ" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" id="prevBtnCJ" class="russian" onclick="nextPrev(-1)">предыдущий</button>
+      <button type="button" id="nextBtn"  class="russian" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -261,9 +261,9 @@ function showTab(n) {
     document.getElementById("prevBtnCJ").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").innerHTML = "Отправить";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "следующий";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)

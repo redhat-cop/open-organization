@@ -64,7 +64,7 @@ curl_setopt_array($curl, array(
     CURLOPT_URL => 'https://www.google.com/recaptcha/api/siteverify',
     CURLOPT_POST => 1,
     CURLOPT_POSTFIELDS => array(
-        'secret' => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+        'secret' => '6LdWYl0UAAAAAF-OOWcmOaFeiBFamk36-G6BVAHq',
         'response' => $_POST['g-recaptcha-response']
     )
 ));
@@ -159,7 +159,7 @@ if(strpos($resp, '"success": true') !== FALSE) {
         <?php #echo Securimage::getCaptchaHtml() ?>
         						<span class="text-danger"><?php if (isset($captcha_error)) echo "<br>$captcha_error"; ?></span>
     </div>
-<div class="g-recaptcha" data-sitekey="XXXXXXXXXXXXXXXXXXXXXXXXXXX"></div>
+<div class="g-recaptcha" data-sitekey="6LdWYl0UAAAAAP8dt8bpKnfqtWKpAZ8bnNHK09-b"></div>
 					<div class="form-group">
 						<input type="submit" name="signup" value="Sign Up" class="btn btn-primary" />
 					</div>

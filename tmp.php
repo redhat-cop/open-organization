@@ -1,6 +1,8 @@
 <?php
 session_start();
 include_once 'dbconnect.php';
+connectDB();
+
 parse_str($_SERVER["QUERY_STRING"], $data);
 $data['client'] = $data['customerName']; // FIXME hack
 
@@ -31,5 +33,16 @@ if (!$result) {
     exit;
 }
 
+
+# Check the referer to see if we need to go to english or russian
+if (preg_match('/lang=ru/', $_SERVER['HTTP_REFERER'])) {
+## Russian
+header("Location: results-ru.php?hash=$hash");
+} else {
+## English
 header("Location: results.php?hash=$hash");
+}
+
+
+#header("Location: results.php?hash=$hash");
 ?>

@@ -1,8 +1,17 @@
 <?php
 session_start();
 
+
+#phpinfo();
 if(isset($_SESSION['usr_id'])!="") {
+	# Check the referer to see if we need to go to english or russian
+	if (preg_match('/lang=ru/', $_REQUEST['ref'])) {
+	## Russian
+	header("Location: assess-ru.php");
+	} else {
+	## English
 	header("Location: assess.php");
+	}
 }
 
 //check if form is submitted
@@ -19,7 +28,14 @@ connectDB();
 	if ($row = mysqli_fetch_array($result)) {
 		$_SESSION['usr_id'] = $row['id'];
 		$_SESSION['usr_name'] = $row['name'];
-		header("Location: assess.php");
+#	if (preg_match('/lang=ru/', $_SERVER['HTTP_REFERER'])) {
+	if (preg_match('/lang=ru/', $_REQUEST['ref'])) {
+	## Russian
+	header("Location: assess-ru.php");
+	} else {
+	## English
+	header("Location: assess.php");
+	}
 	} else {
 		$errormsg = "Incorrect Username or Password!!!";
 	}
@@ -80,6 +96,7 @@ connectDB();
 						<input type="submit" name="login" value="Login" class="btn btn-primary" />
 					</div>
 				</fieldset>
+			<input type="hidden" id="ref" name="ref" value=<?php echo $_SERVER['HTTP_REFERER'];?>>
 			</form>
 			<span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
 		</div>
